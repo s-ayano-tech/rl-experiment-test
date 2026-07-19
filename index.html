@@ -364,7 +364,7 @@
     timeline.push({
         type: jsPsychHtmlButtonResponse,
         stimulus: `<div class="instruction-wrap">
-            <p>これから宝箱を選択するゲームに挑戦してもらいます。所要時間は40~50分ほどです。</p>
+            <p>これから宝箱を選択するゲームに挑戦してもらいます。所要時間は20~30分ほどです。</p>
             <p>実験はいつでも中断・中止することができます。中断・中止する場合は実験者にお知らせください。</p>
             <p>実験参加に同意する場合は同意するを押してください。同意しない場合はブラウザを閉じて実験を終了してください。</p>
         </div>`,
@@ -419,7 +419,7 @@
 
     timeline.push({ 
         type: jsPsychHtmlButtonResponse, 
-        stimulus: `<div class="instruction-wrap"><p>実験参加ありがとうございます。</p><p>最初にコインを 1000枚 差し上げます。</p><p>これから、画面上の宝箱をクリックすることでお金と交換できるコインを失わないようにするゲームを行なってもらいます。<br>コインは、1枚で2円として換算されます。<br>失わずに残ったコインはお金に換えて実験終了後に報酬としてお渡しします。</p></div>`, 
+        stimulus: `<div class="instruction-wrap"><p>実験参加ありがとうございます。</p><p>最初にコインを 1000枚 差し上げます。</p><p>これから、画面上の宝箱をクリックすることでお金と交換できるコインを失わないようにするゲームを行なってもらいます。<br>コインは、1枚で2円として換算されますが、<br>今回は予備実験なので謝金はありません。すみません。</p></div>`,
         choices: ['次へ'] 
     });
 
@@ -1122,7 +1122,7 @@
             document.getElementById('score-board').style.display = 'block'; 
             document.getElementById('points').innerText = "？？？";
             document.getElementById('trial-counter').style.display = 'block';
-            document.getElementById('trial-counter').innerText = (40 + trial_cursor + 1) + "/35";
+            document.getElementById('trial-counter').innerText = (20 + trial_cursor + 1) + "/35";
         }
     };
 
